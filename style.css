@@ -328,3 +328,9 @@ footer { padding: 50px 0; border-top: 1px solid rgba(255,255,255,0.05); text-ali
         padding: 4px 8px;
     }
 }
+@media (max-width: 768px) {
+    .nav-logo-badge {
+        transform: scale(0.9); /* Slightly smaller to fit mobile headers better */
+        margin-left: 10px;
+    }
+}

@@ -128,3 +128,12 @@ const typingObserver = new IntersectionObserver((entries) => {
 
 // Start observing the title
 typingObserver.observe(document.querySelector('#services .section-title'));
+// --- Mobile Menu Auto-Close Logic ---
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navToggle = document.getElementById('nav-toggle'); // Ensure this ID matches your checkbox ID
+        if (navToggle) {
+            navToggle.checked = false;
+        }
+    });
+});
