@@ -33,7 +33,7 @@
         </div>
     </nav>
 
-    <!-- HERO — FIX 6: Updated subheadline -->
+    
     <section id="hero">
         <canvas class="hero-bg-anim" id="particleCanvas"></canvas>
         <div class="container hero-content">
@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <!-- SERVICES — FIX 1: Moved before How It Works. FIX 2: Broken "|" heading removed. FIX 3: "Learn More" → "Get in Touch" linking to #contact. FIX 4: Label renamed to "Advanced Services" -->
+    
     <section id="services" class="section-padding reveal">
         <div class="container">
             <h2 class="section-title"><span id="typing-text"></span><span class="cursor">|</span></h2>
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <!-- HOW IT WORKS — FIX 1: Moved after Services. FIX 5: Title renamed to "How I Work" -->
+    
     <section id="how-it-works" class="section-padding">
         <div class="container">
             <h2 class="section-title reveal">How I Work</h2>
@@ -162,7 +162,7 @@
         </div>
     </section>
 
-    <!-- WORK — FIX 8: "Concept Project" badge added to both cards -->
+   
     <section id="work" class="section-padding reveal">
         <div class="container">
             <h2 class="section-title">Case Studies</h2>
@@ -229,7 +229,7 @@
         </div>
     </section>
 
-    <!-- ABOUT — FIX 9: "SolidWorks API" removed from tech stack. FIX 10: Profile photo with fallback -->
+   
     <section id="about" class="section-padding reveal">
         <div class="container">
             <h2 class="section-title">The Engineering Edge</h2>
@@ -268,32 +268,29 @@
         </div>
     </section>
 
-    <!-- PROOF (unchanged, kept in position) -->
-
-    <!-- CONTACT — FIX 7: "Or send me a message" divider label added above the form -->
     <section id="contact" class="section-padding reveal">
         <div class="container">
             <div class="contact-content">
                 <h2 class="section-title">Let's Build Something</h2>
                 <p class="contact-subtext">Book a free 30-minute discovery call. No pressure, no jargon.</p>
-                <a href="#" class="btn btn-primary btn-large">Book a Free Call</a>
+                <a href="https://calendly.com/kiplangatabraham137/30min" class="btn btn-primary btn-large">Book a Free Call</a>
                 
                 <div class="form-divider-label">
                     <span>Or send me a message</span>
                 </div>
 
-                <form id="contact-form">
+                <form id="contact-form"action = "https://formspree.io/f/mnjovpgp" method = "post">
                     <div class="form-group">
                         <label>Name</label>
-                        <input type="text" placeholder="Your Name">
+                        <input type="text" name="name" placeholder="Your Name">
                     </div>
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="email" placeholder="email@company.com">
+                        <input type="email" name="email" placeholder="email@company.com">
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea rows="4" placeholder="How can I help?"></textarea>
+                        <textarea rows="4" name="message" placeholder="How can I help?"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary full-width">Send Message</button>
                 </form>
