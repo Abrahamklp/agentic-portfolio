@@ -362,3 +362,28 @@ footer { padding: 50px 0; border-top: 1px solid rgba(255,255,255,0.05); text-ali
         transform: translateY(0);
     }
 }
+/* Concept Project Badge */
+.concept-badge {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-dim);
+    font-style: italic;
+}
+/* Contact form divider */
+.form-divider-label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 0;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.form-divider-label::before,
+.form-divider-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
